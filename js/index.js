@@ -1,6 +1,9 @@
 /*
  * index.js
  * Clarifai Basic Application demo code
+ * You can reference Clarifai's JavaScript library to 
+ * complete this demo available at 
+ * https://github.com/Clarifai/clarifai-javascript
  */
 (function ($, Clarifai) {
 	$(document).ready(function () {
@@ -21,46 +24,40 @@
 		tagsContainer.hide()
 
 		// You can ignore this part
-		// Set's the url of the imae preview on click
+		// Set's the url of the image preview
 		image.attr("src", url)
 
 
-		// Requesting Clarifai to getTagsByUrl
-		Clarifai.getTagsByUrl(url, function (error, response) {
-			if (error) {
-				displayError(error)
-			}
-			else if (response) {
-				try {
-					// if we get the response display it
-					displayTag(response)									
-				}
-				catch (error) {
-					console.log(error)
-				}
-			}
-		})
+		/*
+		 * TODO
+		 * request Clarifai tag for the url by using Clarifai.getTagsByUrl
+		 */
 
 		/*
 		 * TODO
-		 * request colors for the same image from Clarifai
+		 * request colors for the image by using Clarifai function to get *colors by url. 
 		 */
 
 	})
 
 	/*
 	 * displayTag
-	 * functionality to display the tag
+	 * functionality to display the tag with classes and probabilities
+	 * contains some functionality regarding the response manipulation
 	 */
 	function displayTag (response) {
 		console.log("Clarifai Response!")
 		console.log(response)
 
-		/* Getting the first image from the 
-		 * we can give more than one image at the time of request
-		 * but since we are requesting tags for only one image
-		 * we only need to retrieve the first image*/
+		/* 
+		 * an array of resultant images is received
+		 * in this case we only request one 
+		 * so we just need to get the first one
+		 */
 		var image 	= 	response.results[0]
+
+		// Image has a further tag that contains classes, concept_ids and 
+		// probabilities for each concept
 		var tag 	= 	image.result.tag
 
 		var conceptsLength = tag.classes.length
@@ -131,6 +128,8 @@
 
 	// function to initialize the keys
 	function initialize () {
+		// getting the credential through calling getKeys()
+		// which is available in Global scope because of keys.js
 		var keys = getKeys() || {}
 
 		var clientId = keys["CLARIFAI_CLIENT_ID"]
@@ -138,12 +137,12 @@
 
 		if (!clientId || !clientSecret) {
 			app.html("Enter your Clarifai's Client ID and Client Secret in order to successfully run this demo. Go to developer.clarifai.com, sign up and create your application if you haven't already. You'll have to edit keys.js file to enter your credentials")
-			return;
+		}
+		else {
+			// TODO
+			// Initialize the Clarifai api here			
 		}
 
-		Clarifai.initialize({
-			clientId: clientId,
-			clientSecret: clientSecret
-		})
+
 	}
 }(jQuery, Clarifai));

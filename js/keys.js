@@ -4,6 +4,7 @@
 // Enter your keys below to take the first in running this step 
 // VROOOOM VROOM
 
+// Returns an object with the required credentials
 function getKeys () {
 	return {
 		CLARIFAI_CLIENT_ID: "",
