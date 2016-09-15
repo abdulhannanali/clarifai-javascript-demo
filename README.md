@@ -4,7 +4,7 @@ live at [hannanali.tech/clarifai-javascript-demo](https://hannanali.tech/clarifa
 
 This demo is for the online talk I'll  give in combination with the Google Slides located [here](https://goo.gl/A1su2P). 
 
-[![first slide of the presentation](./assets/clarifai.svg)](https://goo.gl/A1su2P)
+[![first slide of the presentation](//cdn.rawgit.com/abdulhannanali/clarifai-javascript-demo/master/assets/clarifai.svg)](https://goo.gl/A1su2P)
 
 
 ## Stuff you need to know and have (clickbaity line?)
@@ -65,7 +65,7 @@ You can switch to the `complete` branch on github to check out the completed dem
 ### Video Tutorial (Coming Soon on your nearest [YouTube](https://youtube.com)) 🎉🎉🎉🎉🎉
 
 ### Credits
-
+**
 ### LICENSE
 
 MIT License. See [LICENSE](LICENSE) for more details.
