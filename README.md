@@ -48,7 +48,7 @@ Clarifai.getTagsByUrl(url, function (error, response) {
 })
 ```
 
-3. Handle the errors correctly too.
+3. Handle and display the errors correctly too. Just so you know it can get sometimes a little buggy when you make requests to Clarifai 
 
 **FINAL STEP**
 Get the demo running somehow
@@ -58,7 +58,7 @@ use the Clarifai SDK to find the major colors in an image using `/v1/color` endp
 
 ##### Callbacks or promises
 
-The Clarifai's SDK supports both, so feel free to use any of them. I have used Callbacks in my solutions because that's what majority of the people know from the beginning. You can also use promises which are a newer way. 
+The Clarifai's SDK supports both, so feel free to use any of them. I have used Callbacks in my solutions because that's what majority of the people know from the beginning. You can also use promises which are a newer, cooler and better way to manage callback hell.
 
 
 
