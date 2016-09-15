@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<div class="container app">
-			<!-- Introductory text for the Clarifai -->
+			<!-- Header stuff for the Clarifai -->
 			<!-- Feel free to ignore this part -->
 			<div class="row">
 				<div class="col-sm-12">
@@ -25,6 +25,7 @@
 			</div>
 			<div class="row inputForm">
 				<div class="col-sm-12">
+					<!-- Image url input -->
 					<h1>Submit the image</h1>
 					<div class="form-group">
 						<input class="form-control" type="text" id="imageUrl" name="imageUrl">
@@ -42,6 +43,7 @@
 				</div>
 			</div>
 
+			<!-- Cotains the tag for the image including the error occured while parsing the image -->
 			<div class="row tags-container" style="display: none;">
 					<div class="col-sm-12">
 						<h1><span class="label label-primary">Tag</span></h1>
@@ -60,14 +62,15 @@
 		<!-- JavaScript Libraries including jQuery, Bootstrap -->
 		<script src="https://cdn.jsdelivr.net/jquery/2.2.4/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.14.0/babel.min.js"></script> -->
 		<!-- JavaScript Libraries script end -->
 
-		<!-- Clarifai's SDK open sourced at https://github.com/Clarifai/clarifai-javascript -->
+		<!-- Clarifai's open source JavaScript SDK available at https://github.com/Clarifai/clarifai-javascript -->
 		<script src="https://sdk.clarifai.com/js/clarifai-1.2.1.js"></script>
 
 
 		<!-- Personal scripts -->
+
+		<!-- Warning! Including keys like this is not a secure way to make a public project. All keys will be exposed -->
 		<script src="./js/keys.js"></script>
 		<script src="./js/index.js"></script>
 		<!-- Personal scripts end -->
