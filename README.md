@@ -65,7 +65,9 @@ You can switch to the `complete` branch on github to check out the completed dem
 ### Video Tutorial (Coming Soon on your nearest [YouTube](https://youtube.com)) 🎉🎉🎉🎉🎉
 
 ### Credits
-**
-### LICENSE
 
+Fellow Clarifai Champions and supportive and awesome team of Clarifai 
+![clarifai champions 2016](./assets/champions.jpg)
+
+### LICENSE
 MIT License. See [LICENSE](LICENSE) for more details.
