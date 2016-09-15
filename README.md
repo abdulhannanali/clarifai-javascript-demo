@@ -8,7 +8,7 @@ This demo is for the online talk I'll  give in combination with the Google Slide
 
 
 ## Stuff you need to know and have (clickbaity line?)
-Hey, know what? What! This demo is based on JavaScript as is apparent from the name. Cos, rest assured this is the only real dev language. Okay, now let me Clarify (You mean Clarifai? LOL!) some stuff about the demo. AKA **Clarifaing Clarifai**.
+Hey, know what? This demo is based on JavaScript as is apparent from the name. Cos, rest assured this is the only real dev language. Okay, now let me Clarify (You mean Clarifai? LOL!) some stuff about the demo. AKA **Clarifaing Clarifai**.
 
 It helps if you have a **basic JavaScript understanding** of the things discussed here and have some knowledge of the front end development scenario as well. Even if you don't know thse things you should definitely peek into the code and try out the demo, there are helpful comments along the code to help you. You shouldn't give up cos you don't know some thing, that's a lame excuse my friend! 😉😜😉
 
@@ -17,7 +17,7 @@ There are no credentials provided with the application, so supply your own, go t
 
 You can read more about how to setup your application, get the credentials and about many possible integrations on [Clarifai's website](https://clarifai.com).
 
-### How to get it in your system (i am talking about your computer, lol)
+### How to get it in your system (i am talking about your computer, lol)?
 
 Well that's an easy one, you gotta have that [git](https://git-scm.com/download) installed and if you haven't installed it already, seriously, you need to stop being lazy. 
 
@@ -39,7 +39,15 @@ There's some boiler plate to make the demo just work but tutorial's designed in 
 ### Steps to complete this demo
 
 1. Get the credentials from Clarifai's website and paste them into `keys.js` file in appropriate places.
-2. Get the tags from the Clarifai's website for the image url entered and supply it to the view logic `displayTags` to get the tags displayed. You need to access `/v1/tag` endpoint using SDK for this purpose.
+
+2. Get the tags from the Clarifai's website for the image url entered and supply it to the view logic `displayTags` to get the tags displayed. You need to access `/v1/tag` endpoint using SDK for this purpose. You can start with the code below 
+
+```js
+Clarifai.getTagsByUrl(url, function (error, response) {
+	// further code here
+})
+```
+
 3. Handle the errors correctly too.
 
 **FINAL STEP**
@@ -48,10 +56,16 @@ Get the demo running somehow
 **EXTRA STEP**
 use the Clarifai SDK to find the major colors in an image using `/v1/color` endpoint. (View not implemented rn)
 
+##### Callbacks or promises
+
+The Clarifai's SDK supports both, so feel free to use any of them. I have used Callbacks in my solutions because that's what majority of the people know from the beginning. You can also use promises which are a newer way. 
+
+
+
 ### Libraries and helpers used
 
 ##### [Clarifai's JavaScript SDK](https://github.com/Clarifai/clarifai-javascript)
-The most notable and important part in this demo is Clarifai's JavaScript SDK which is really easy to use. You can check out the JavaScript's SDK repo [here](https://github.com/Clarifai/clarifai-javascript) and use it in the browser as well as in [nodejs](https://nodejs.org) along with any shiny tool such as [Webpack](https://webpack.io), [Browserify](https://browserify.io) or that new tool that hasn't even come out yet. 
+The most notable and important part in this demo is Clarifai's JavaScript SDK which is highly easy to use. You can check out the JavaScript's SDK repo [here](https://github.com/Clarifai/clarifai-javascript) which includes comprehensive documentation in it's README and use it in the browser as well as in [nodejs](https://nodejs.org) along with any shiny tool such as [Webpack](https://webpack.io), [Browserify](https://browserify.io) or that new tool that hasn't even come out yet. 
 
 You can check out SDK's for other languages in [Clarifai's Developer Guide](https://developer.clarifai.com/guide)
 
