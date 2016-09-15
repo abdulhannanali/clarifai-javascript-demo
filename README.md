@@ -27,7 +27,10 @@ After installing [git](https://git-scm.com/download), copy pasta this line in th
 git clone https://github.com/abdulhannanali/clarifai-javascript-demo
 ```
 
-You can make changes to this demo now, start by looking into [`index.html`](index.html) file
+You can make changes to this demo now, start by looking into [`index.html`](index.html) file.
+
+You can load the file in your browser by simply opening it up, but it's recommended to setup a simple http-server using node.js or any other language. It's really easy to setup and goes a long way in helping you with demos. 
+You can check out the details on setting up http-server [here](https://www.npmjs.com/package/http-server). You need to have [nodejs](https://nodejs.org) installed for this purpose. 
 
 ### boiler plate code
 
@@ -35,14 +38,15 @@ There's some boiler plate to make the demo just work but tutorial's designed in 
 
 ### Steps to complete this demo
 
-1. Get the credentials from Clarifai's website and paste them into `keys.js` file
+1. Get the credentials from Clarifai's website and paste them into `keys.js` file in appropriate places.
 2. Get the tags from the Clarifai's website for the image url entered and supply it to the view logic `displayTags` to get the tags displayed. You need to access `/v1/tag` endpoint using SDK for this purpose.
+3. Handle the errors correctly too.
 
 **FINAL STEP**
 Get the demo running somehow
 
 **EXTRA STEP**
-use the Clarifai SDK to find the major colors in an image using /v1/color endpoint. (View not implemented rn)
+use the Clarifai SDK to find the major colors in an image using `/v1/color` endpoint. (View not implemented rn)
 
 ### Libraries and helpers used
 
