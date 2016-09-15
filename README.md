@@ -48,7 +48,7 @@ Clarifai.getTagsByUrl(url, function (error, response) {
 })
 ```
 
-3. Handle and display the errors correctly too. Just so you know it can get sometimes a little buggy when you make requests to Clarifai 
+3. Handle and display the errors correctly too. Just so you know client requests aren't always perfect and Clarifai has to tell us sometimes that our requests are bad by giving back `400 Bad Request` instead. We really need this to convey to our user properly.
 
 **FINAL STEP**
 Get the demo running somehow
