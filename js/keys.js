@@ -6,7 +6,7 @@
 
 function getKeys () {
 	return {
-		CLARIFAI_CLIENT_ID: "",
-		CLARIFAI_CLIENT_SECRET: ""
+		CLARIFAI_CLIENT_ID: "JqJvGlcHP9i-2pL_XNKVbCMIHFkkaOCB7fu1CCfJ",
+		CLARIFAI_CLIENT_SECRET: "q2bmBs8YiQ858Xm9Fsq-9OAzWquFUEYsqm0wFHgv"
 	}
 }
