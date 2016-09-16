@@ -13,13 +13,25 @@ Hey, know what? This demo is based on JavaScript as is apparent from the name. C
 It helps if you have a **basic JavaScript understanding** of the things discussed here and have some knowledge of the front end development scenario as well. Even if you don't know thse things you should definitely peek into the code and try out the demo, there are helpful comments along the code to help you. You shouldn't give up cos you don't know some thing, that's a lame excuse my friend! 😉😜😉
 
 #### Clarifai Credentials
-There are no credentials provided with the application, so supply your own, go to [developer.clarifai.com](https://developer.clarifai.com), signup, create a new application and copy paste the **client id** and **client secret** of this application in [`keys.js`](./js/keys.js). The demo can't successfully run without the credentials even if you got all the logic 👌👌👌🏎🏎🏎
+There are no credentials provided with the application, so supply your own, go to [developer.clarifai.com](https://developer.clarifai.com), signup, create a new application and copy paste the **client id** and **client secret** of this application in [`keys.js`](./js/keys.js). The demo can't successfully run without the credentials even if you got all the logic 👌👌👌
+
+return the object in the `getKeys()` with appropriate key values
+and replace the placeholder values with real world values
+
+```js
+function getKeys() {
+	return {
+		clientId: "YOUR_CLIENT_ID", // Replace this value with your Clarifai Client ID
+		clientSecret: "YOUR_ClIENT_SECRET" // Replace this value with your Clarifai Client Secret
+	} 
+}
+```
 
 You can read more about how to setup your application, get the credentials and about many possible integrations on [Clarifai's website](https://clarifai.com).
 
-### How to get it in your system (i am talking about your computer, lol)?
+### get this repo in your system (i am talking about your computer, lol, not you 😈)
 
-Well that's an easy one, you gotta have that [git](https://git-scm.com/download) installed and if you haven't installed it already, seriously, you need to stop being lazy. 
+Well that's an easy one, you gotta have that [git](https://git-scm.com/download) installed and if you haven't installed it already, seriously, you need to stop being lazy and download it now from [here](https://git-scm.com/download)
 
 After installing [git](https://git-scm.com/download), copy pasta this line in the command line
 
@@ -56,7 +68,7 @@ Get the demo running somehow
 **EXTRA STEP**
 use the Clarifai SDK to find the major colors in an image using `/v1/color` endpoint. (View not implemented rn)
 
-##### Callbacks or promises
+##### Callbacks or promises (📞🔙 or 👫)
 
 The Clarifai's SDK supports both, so feel free to use any of them. I have used Callbacks in my solutions because that's what majority of the people know from the beginning. You can also use promises which are a newer, cooler and better way to manage callback hell.
 
@@ -84,8 +96,8 @@ You can switch to the `complete` branch on github to check out the completed dem
 
 ### Credits
 
-Fellow Clarifai Champions and supportive and awesome team of Clarifai 
-![clarifai champions 2016](./assets/champions.jpg)
+Fellow Clarifai Champions and awesome supportive team of Clarifai 
+![Clarifai Champions 2016](./assets/champions.jpg)
 
 ### LICENSE
 MIT License. See [LICENSE](LICENSE) for more details.
