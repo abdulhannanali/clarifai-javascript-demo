@@ -1,5 +1,7 @@
 # Clarifai's JavaScript  Demo 
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/abdulhannanali/clarifai-javascript-demo.svg)](https://greenkeeper.io/)
+
 live at [hannanali.tech/clarifai-javascript-demo](https://hannanali.tech/clarifai-javascript-demo)
 
 This demo is for the online talk I'll  give in combination with the Google Slides located [here](https://goo.gl/A1su2P). 
